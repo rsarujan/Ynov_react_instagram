@@ -18,7 +18,7 @@ Version de Python : `6.14.8 ou supérieur`
 
 Une fois allé dans le projet, je vous invite à installer tous les packages nécessaires avec ces commandes:
 ```
- yarn add babel-eslint prettier-eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react react-detect-offline styled-components firebase  --dev;
+ yarn add axios babel-eslint prettier-eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react react-detect-offline styled-components firebase  --dev;
  npm install -g firebase-tools; 
  npm i firebase; yarn upgrade
 ```
