@@ -57,12 +57,16 @@ La base de données firestore va me permettre de stocker sur un cloud tous les p
 Image de table de post:
 
 Un post est identifié avec un document (où ce dernier va jouer le rôle de l'id) et ce document à un nickname (l'username de la personne qui a posté), un avatar (photo de profil identique à tous les utilisateurs), l'imageUrl (le lien de l'image ou le fichier de l'image sous forme de lien), d'une caption (qui sera le commentaire laissé par le nickname) et enfin le timestamp (qui jouera le rôle d'afficher l'heure à laquelle le post a été publié afin de le trier).
+
 ![posts db](./posts.png)
+
 
 Image de table de comments:
 
 Comme pour la table post, un commentaire est identifié avec un document (où ce dernier va jouer le rôle de l'id) et ce document à un nickname (l'username de la personne qui va commenter), d'un text (qui sera le commentaire laissé par le username) et enfin le timestamp ((qui jouera le rôle d'afficher l'heure à laquelle le commentaire a été publié afin de le trier).
+
 ![comments db](./comments.png)
+
 
 ## UTILISATION
 
