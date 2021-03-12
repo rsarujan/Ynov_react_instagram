@@ -55,10 +55,12 @@ Image du localStorage:
 La base de données firestore va me permettre de stocker sur un cloud tous les posts ainsi que les commentaires afin de permettre à tous les utilisateurs d'accéder à tous les posts en plus de ceux qu'ils ont postés et/ou de les commenter. Si nous mettons ces données dans le localStorage, lorsqu'on quitte le navigateur ou lorsqu'on vide le cache, toute la base de données se supprimera alors qu'avec firestore, elle jouera le rôle de stockage mais aussi un rôle de jeu de test afin de tester l'application au cours du temps.
 
 Image de table de post:
+
 Un post est identifié avec un document (où ce dernier va jouer le rôle de l'id) et ce document à un nickname (l'username de la personne qui a posté), un avatar (photo de profil identique à tous les utilisateurs), l'imageUrl (le lien de l'image ou le fichier de l'image sous forme de lien), d'une caption (qui sera le commentaire laissé par le nickname) et enfin le timestamp (qui jouera le rôle d'afficher l'heure à laquelle le post a été publié afin de le trier).
 ![posts db](./posts.png)
 
 Image de table de comments:
+
 Comme pour la table post, un commentaire est identifié avec un document (où ce dernier va jouer le rôle de l'id) et ce document à un nickname (l'username de la personne qui va commenter), d'un text (qui sera le commentaire laissé par le username) et enfin le timestamp ((qui jouera le rôle d'afficher l'heure à laquelle le commentaire a été publié afin de le trier).
 ![comments db](./comments.png)
 
