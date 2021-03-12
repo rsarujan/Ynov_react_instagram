@@ -20,7 +20,7 @@ Une fois allé dans le projet, je vous invite à installer tous les packages né
 ```
  yarn add babel-eslint prettier-eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react react-detect-offline styled-components firebase  --dev;
  npm install -g firebase-tools; 
- npm i firebase; 
+ npm i firebase; yarn upgrade
 ```
 
 Enfin, il vous suffit de la lancer avec la commande
