@@ -26,6 +26,7 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
         .collection('comments')
         .orderBy('timestamp', 'desc')
         .onSnapshot(snapshot => {
+          // set comments
           setComments(snapshot.docs.map(doc => doc.data()))
         })
     }
@@ -35,6 +36,7 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
   }, [postId])
 
   // Get the color of a like (red or white)
+  // Default white
   const getIcone = post => {
     const currentFavorite = localStorage.getItem('favorite')
       ? JSON.parse(localStorage.getItem('favorite'))
@@ -64,7 +66,7 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
     }
     //if it's present so do that
     else {
-      //I did a filter to sortout the item with I wanted to dislike
+      //I did a filter to sortout the item
       const curr = currentFavorite.filter(
         e => e.postId !== isPresent.postId && e.user === isPresent.user
       )
@@ -89,6 +91,7 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
     // the photo, the comment and also the like icon
     <StylePost>
       <header>
+        {/* Print the nickname and the profil photo of a post */}
         <StylePostUser>
           <StylePostUserAvatar>
             <StylePostUserAvatarImg src={avatar} alt={nickname} />
@@ -99,11 +102,12 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
         </StylePostUser>
       </header>
       <div>
+        {/* Print the photo and the comment of post */}
         <StylePostImageBg>
           <StylePostImageImg alt={caption} src={imageUrl} />
         </StylePostImageBg>
       </div>
-
+      {/* Add into favorites (like button)*/}
       <ButtonImg
         src={getIcone({
           postId,
@@ -113,11 +117,12 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
           user,
           avatar
         })}
+        // pass all data to store into favorites then use it to print into /favorites
         onClick={() =>
           addInStorage({ postId, nickname, imageUrl, caption, user, avatar })
         }
       ></ButtonImg>
-
+      {/* 1 comment of the post */}
       <StylePostCaption>
         <StylePostCaptionStrong>{nickname}</StylePostCaptionStrong> {caption}
         <StylePostComment>
@@ -129,6 +134,7 @@ const Post = ({ postId, user, nickname, avatar, imageUrl, caption }) => {
           ))}
         </StylePostComment>
       </StylePostCaption>
+      {/* Add a comment by user or other user */}
       {user && (
         <StylePostCommentBox>
           <StylePostInput

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Footer = () => {
   return (
     <footer>
-      {/* A generic footer wich I added some css */}
+      {/* A generic footer wich I added some css for each div, img, li, etc...*/}
       <StyleContainer>
         <StyleNav>
           <StyleNavUl>

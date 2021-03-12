@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       {/* Print the header and the page home (bodypost wich call post.js) */}
       <Header />
-
+      {/* Print all post */}
       <BodyPost />
     </div>
   )

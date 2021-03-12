@@ -15,10 +15,8 @@ const homeButton = () => {
   )
 }
 //Same CSS as Favorites Button but for Home button
-
 const HomeButton = styled.button`
   cursor: pointer;
-
   //width: 110%;
   padding: 0 8px;
   background: red;

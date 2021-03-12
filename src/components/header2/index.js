@@ -31,6 +31,7 @@ const Header2 = () => {
     </StyleNav>
   )
 }
+// CSS for nav
 const StyleNav = styled.nav`
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
@@ -42,6 +43,7 @@ const StyleNav = styled.nav`
   transition: height 0.2s ease-in-out;
   height: 77px;
 `
+// CSS for div into nav
 const StyleNavMenu = styled.div`
   display: flex;
   flex-direction: row;
@@ -51,7 +53,7 @@ const StyleNavMenu = styled.div`
   padding: 26px 40px;
   justify-content: space-between;
 `
-
+// CSS for img
 const StyleImg = styled.img`
   width: 150px;
   height: 40px;

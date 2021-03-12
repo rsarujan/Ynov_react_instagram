@@ -8,6 +8,7 @@ const OffLineChamp = () => {
       <p>Vous êtes en Hors Ligne. Veuillez vérifier votre connexion.</p>
       <Router>
         <div align='left'>
+          {/* Affiche un lien pour redirigé vers /favorites */}
           <Link to={'/favorites'}>Favorites</Link>
         </div>
       </Router>

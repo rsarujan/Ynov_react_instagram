@@ -46,6 +46,7 @@ const ImageUpload = ({ username }) => {
               caption: caption,
               imageUrl: url,
               nickname: username,
+              // avatar: profil image
               avatar:
                 'https://i.pinimg.com/736x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg'
             })
@@ -74,6 +75,7 @@ const ImageUpload = ({ username }) => {
     </StyleDivImageUpload>
   )
 }
+// CSS for div
 const StyleDivImageUpload = styled.div`
   display: flex;
   flex-direction: column;
@@ -84,7 +86,7 @@ const StyleDivImageUpload = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
 `
-
+// CSS for progress bar
 const StyleImageUploadProgress = styled.progress`
   width: 100%;
 `

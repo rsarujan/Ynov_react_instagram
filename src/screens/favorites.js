@@ -9,11 +9,13 @@ const Favorites = () => {
 
   return (
     <div>
+      {/* Print the header with Home button and logout button */}
       <Header2 />
       <div>
         <strong>Liste des favories</strong>
       </div>
       <br />
+      {/* Map favorites localStorage to get back all data which I liked */}
       {fav
         ? fav.map((post, id) => (
             <StylePost key={id}>

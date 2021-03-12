@@ -7,10 +7,11 @@ import OffLineChamp from './components/offLineChamp'
 function App() {
   return (
     <div className='App'>
+      {/* When the network is down */}
       <Offline>
         <OffLineChamp />
       </Offline>
-
+      {/* When the network is on */}
       <Online>
         <br />
         <br />

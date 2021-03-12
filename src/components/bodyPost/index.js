@@ -50,6 +50,7 @@ const BodyPost = () => {
 
   return (
     <div>
+      {/* Je map chaque post */}
       {posts.map(({ post, id }) => (
         <Post
           key={id}
@@ -61,6 +62,7 @@ const BodyPost = () => {
           caption={post.caption}
         />
       ))}
+      {/* Upload an image */}
       {user ? <ImageUpload username={user} /> : null}
     </div>
   )

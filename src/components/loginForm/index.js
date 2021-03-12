@@ -21,7 +21,7 @@ const LoginFrom = () => {
           username: userName,
           password: password
         })
-        // set the token and a user into localStorage
+        // set the token and a user into localStorage then push it into /home
         .then(response => {
           console.log(response)
           token.setItem('token', response.headers['x-access-token'])
@@ -41,12 +41,14 @@ const LoginFrom = () => {
   return (
     // input form
     <StyledForm>
+      {/* Input username */}
       <Input
         placeholder='Num. téléphone, nom d’utilisateur ou e-mail'
         type='text'
         value={userName}
         onChange={e => setUserName(e.target.value)}
       />
+      {/* Input password */}
       <Input
         placeholder='Mot de passe'
         type='password'

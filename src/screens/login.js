@@ -16,11 +16,13 @@ const Login = () => {
   return (
     <div>
       {/* Login Form with Instagram Logo and the footer of Instagram */}
+      {/* Print Logo */}
       <StyleLogo>
         <Logo />
       </StyleLogo>
-
+      {/* Login Form */}
       <LoginFrom />
+      {/* Print the footer */}
       <StyleFooter>
         <Footer />
       </StyleFooter>

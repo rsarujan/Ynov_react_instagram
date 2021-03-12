@@ -14,6 +14,7 @@ const Routes = () => {
   return (
     <Router>
       <Switch>
+        {/* Main 3 paths */}
         <Route exact path='/' component={Login}></Route>
         <Route exact path='/home' component={Home}></Route>
         <Route path='/favorites' component={Favorites} />
