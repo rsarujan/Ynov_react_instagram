@@ -26,11 +26,15 @@ Enfin, il vous suffit de la lancer avec la commande
 yarn start
 ```
 
-Pour commencer à utiliser l'application, vous devrez ensuite ouvrir votre navigateur internet favori et accéder à l'une des deux URLs suivantes
+Pour commencer à utiliser l'application, vous devrez ensuite ouvrir votre navigateur internet favori et accéder à l'une des URLs suivantes
 
 > http://127.0.0.1:3000
 
 > http://localhost:3000/
+
+> http://localhost:8000/
+
+> http://localhost
 
 #### Si problème
 Si vous apercevez que les commentaires ainsi que les posts ne s'enregistrent pas, je vous invite à saisir cette commande
