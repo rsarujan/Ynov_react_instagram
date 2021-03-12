@@ -10,11 +10,11 @@ Avant de commencer à utiliser leProjet React - Instagram, il vous faudra le té
 
 Avant d'aller plus loin, veuillez vous assurer que vous avez correctement installé [Node](https://nodejs.org/en/download/)
 
-Version de Python : `v14.15.1 ou supérieur`
+Version de node : `v14.15.1 ou supérieur`
 
 Puis vérifiez que vous avez installé [npm](https://www.npmjs.com/get-npm)
 
-Version de Python : `6.14.8 ou supérieur`
+Version de npm : `6.14.8 ou supérieur`
 
 Une fois allé dans le projet, je vous invite à installer tous les packages nécessaires avec ces commandes:
 ```
