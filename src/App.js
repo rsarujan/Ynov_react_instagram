@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Routes from './config/router'
+import { Online, Offline } from 'react-detect-offline'
+import OffLineChamp from './components/offLineChamp'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Offline>
+        <OffLineChamp />
+      </Offline>
+
+      <Online>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Routes />
+      </Online>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
