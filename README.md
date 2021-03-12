@@ -47,6 +47,7 @@ puis de relancer l'application avec cette commande
 ```
 yarn start
 ```
+
 ### LES DIFFERENTES TABLES UTILISEES 
 #### localStorage
 Le localStorage va me permettre de stocker en local le token ainsi que l'username de la personne qui va se connecter.
@@ -56,7 +57,8 @@ Image du localStorage:
 ![localStorage Table](./localStorage.png)
 
 #### firestore db
-[Firestore] (https://firebase.google.com/docs/firestore) de Google Cloud est une base de données de documents NoSQL qui simplifie le développement d'applications. Bien que l'interface Firestore présente de nombreuses fonctionnalités identiques aux bases de données traditionnelles, elle diffère en tant que base de données NoSQL de ces bases de données par la manière dont elle décrit les relations entre les objets de données.
+
+ [Firestore] (https://firebase.google.com/docs/firestore) de Google Cloud est une base de données de documents NoSQL qui simplifie le développement d'applications. Bien que l'interface Firestore présente de nombreuses fonctionnalités identiques aux bases de données traditionnelles, elle diffère en tant que base de données NoSQL de ces bases de données par la manière dont elle décrit les relations entre les objets de données.
 
 La base de données firestore va me permettre de stocker sur un cloud tous les posts ainsi que les commentaires afin de permettre à tous les utilisateurs d'accéder à tous les posts en plus de ceux qu'ils ont postés et/ou de les commenter. Si nous mettons ces données dans le localStorage, lorsqu'on quitte le navigateur ou lorsqu'on vide le cache, toute la base de données se supprimera alors qu'avec firestore, elle jouera le rôle de stockage mais aussi un rôle de jeu de test afin de tester l'application au cours du temps.
 
